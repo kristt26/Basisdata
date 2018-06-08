@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title of the document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="api/Controller.js"></script>
+
+</head>
+
+<body ng-app="MyApp" ng-controller="MyController" ng-init="Init()">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <form role="form">
+                    <div class="form-group">
+
+                        <label for="exampleInputEmail1">
+                            Query String
+                        </label>
+                        <textarea class="form-control"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        Submit
+                    </button>
+                </form>
+            </div>
+            <div class="col-md-4">
+                {{TestString}}
+            </div>
+        </div>
+    </div>
+    <script src="node_modules/jquery-1.10.2.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
